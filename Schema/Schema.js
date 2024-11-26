@@ -27,6 +27,7 @@ const {
       stack: {type: GraphQLString},
       role: {type: GraphQLString},
       cohort: {type: GraphQLInt},
+      week: {type: GraphQLInt},
     }),
   });
 
