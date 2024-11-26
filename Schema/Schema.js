@@ -28,6 +28,7 @@ const {
       role: {type: GraphQLString},
       cohort: {type: GraphQLInt},
       week: {type: GraphQLInt},
+      weeklyRating: {type: GraphQLInt}
     }),
   });
 
