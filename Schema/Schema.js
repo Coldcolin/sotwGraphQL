@@ -11,7 +11,8 @@ const {
     GraphQLNonNull,
     GraphQLInt,
     GraphQLEnumType,
-    GraphQLFloat
+    GraphQLFloat,
+    GraphQLBoolean 
   } = require('graphql');
 
   const userType = new GraphQLObjectType({
@@ -28,7 +29,8 @@ const {
       role: {type: GraphQLString},
       cohort: {type: GraphQLInt},
       week: {type: GraphQLInt},
-      weeklyRating: {type: GraphQLFloat}
+      weeklyRating: {type: GraphQLFloat},
+      assessedForTheWeek: {type: GraphQLBoolean  }
     }),
   });
 
