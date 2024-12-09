@@ -5,6 +5,7 @@ const userSchema = new mongoose.Schema({
     image: {type: String, required: true},
     imageId: {type: String, required: true},
     email: {type: String, required: true, unique: true},
+    phone: {type: String, required: true, unique: true},
     password: {type: String, required: true},
     stack: {type:String, required: true},
     role: {type: String, required: true},
@@ -14,7 +15,10 @@ const userSchema = new mongoose.Schema({
     weeklyRating: {type: Number},
     nominated: {type: Boolean, default: false},
     studentOfTheWeek: {type: Boolean, default: false},
-    bStudentOfTheWeek: {type: Boolean, default: false}
+    bStudentOfTheWeek: {type: Boolean, default: false},
+    position: {type: String},
+    week: {type: String, default: 1},
+    assessedForTheWeek: {type: Boolean, default: false}
 }, {timestamps:true});
 
 const userModel = mongoose.model("SOWusers", userSchema);
