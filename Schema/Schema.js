@@ -30,7 +30,7 @@ const {
       cohort: {type: GraphQLInt},
       week: {type: GraphQLInt},
       weeklyRating: {type: GraphQLFloat},
-      assessedForTheWeek: {type: GraphQLBoolean  }
+      assessedForTheWeek: {type: GraphQLBoolean, defaultValue: false}
     }),
   });
 
